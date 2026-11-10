@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo — Configuratore Premiazioni / Etichette</title>
+  <link rel="stylesheet" href="product-configurator.css?v=awards3">
+  <style>
+    :root { --demo-blue: #005BC9; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #dbeafe 0%, transparent 55%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 50%);
+      color: #152238;
+      padding: 1.25rem 1.5rem 2rem;
+    }
+    .demo-banner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      padding: 0.85rem 1rem;
+      border: 1px solid #dbe3ee;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .demo-banner h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--demo-blue);
+    }
+    .demo-banner p {
+      margin: 0.2rem 0 0;
+      font-size: 0.85rem;
+      color: #5b6b7c;
+    }
+    .demo-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--demo-blue);
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .demo-pdp {
+      max-width: 420px;
+      background: #fff;
+      border: 1px solid #e1e8f0;
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 30px rgba(21, 34, 56, 0.06);
+    }
+    .demo-pdp img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #f3f6fa;
+    }
+    .demo-pdp h2 {
+      margin: 0.85rem 0 0.25rem;
+      font-size: 1.1rem;
+    }
+    .demo-pdp .meta {
+      margin: 0 0 1rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-banner">
+    <div>
+      <h1>Hole Gadget — Mode Premiazioni (awards)</h1>
+      <p>Demo locale su asset del tema <strong>Xtra [DEV Premiazioni]</strong> · step etichette + logo opzionale</p>
+    </div>
+    <span class="demo-badge">DEMO CONFIGURATORE</span>
+  </div>
+
+  <div class="demo-pdp">
+    <img src="https://cdn.shopify.com/s/files/1/0602/6815/0946/files/trofei-personalizzabili_989a16cb-5f84-4ac2-847f-3a59c26cf127.png?v=1773235754" alt="Tris di premiazioni">
+    <h2>Tris di premiazioni 15 cm | Cod. 13.569</h2>
+    <p class="meta">product_type: premiazioni · collection: premiazioni</p>
+
+    <div id="pc-configurator" class="pc-wrapper pc-wrapper-cta pc-pdp-gedshop"
+      data-product-id="16181512110425"
+      data-routes-add="/cart/add.js"
+      data-routes-cart="/cart"
+      data-currency="EUR"
+      data-has-variants="true"
+      data-pc-configurable="true">
+
+      <div id="pc-fallback-unavailable" class="pc-fallback-unavailable" hidden aria-live="polite">
+        <p class="pc-fallback-message">Configurazione non disponibile per questo prodotto.</p>
+      </div>
+
+      <div id="pc-cta-area" class="pc-cta-area">
+        <button type="button" class="pc-btn pc-btn-cta overlay-buy_button" id="pc-btn-open-modal" aria-haspopup="dialog">
+          CALCOLA PREVENTIVO
+        </button>
+      </div>
+
+      <script type="application/json" id="pc-product-data">
+      {
+        "id": 16181512110425,
+        "title": "Tris di premiazioni 15 cm a 3 colorazioni | Cod. 13.569",
+        "handle": "tris-di-premiazioni-19-18-17-cm-cod-13-399s-copia",
+        "featured_image": "https://cdn.shopify.com/s/files/1/0602/6815/0946/files/trofei-personalizzabili_989a16cb-5f84-4ac2-847f-3a59c26cf127.png?v=1773235754",
+        "isConfigurable": true,
+        "configProductType": "premiazioni",
+        "productType": "premiazioni",
+        "inPremiazioniCollection": true,
+        "quantityPricing": null,
+        "variants": [
+          {
+            "id": 57540750672217,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "price": 2390,
+            "available": true,
+            "inventory_quantity": 50,
+            "inventory_policy": "deny",
+            "inventory_management": "shopify"
+          }
+        ],
+        "options": [
+          { "name": "Title", "values": ["Default Title"] }
+        ],
+        "color_swatches": {},
+        "personalizationOptions": [],
+        "personalizationMeta": {
+          "mode": "awards",
+          "minimumOrderQuantity": null
+        },
+        "deliveryNotes": [],
+        "available": true
+      }
+      </script>
+
+      <div id="pc-modal-overlay" class="pc-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="pc-modal-title" aria-hidden="true" hidden>
+        <div class="pc-modal-backdrop" id="pc-modal-backdrop"></div>
+        <div class="pc-modal-dialog">
+          <header class="pc-modal-header">
+            <div class="pc-modal-header-top">
+              <h2 id="pc-modal-title" class="pc-modal-title">Configuratore</h2>
+              <button type="button" class="pc-modal-close" id="pc-btn-close-modal" aria-label="Chiudi">×</button>
+            </div>
+            <div id="pc-mobile-step-header" class="pc-mobile-step-header" aria-live="polite">
+              <div class="pc-mobile-step-header-top">
+                <span id="pc-mobile-step-title" class="pc-mobile-step-title">Taglie e colori</span>
+                <span id="pc-mobile-step-index" class="pc-mobile-step-index">1/4</span>
+              </div>
+              <div class="pc-mobile-progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="4">
+                <div id="pc-mobile-progress-fill" class="pc-mobile-progress-fill" style="width: 25%;"></div>
+              </div>
+            </div>
+            <nav class="pc-steps-nav" role="tablist" aria-label="Configuratore prodotto">
+              <button type="button" class="pc-step-tab pc-active" data-step="1" aria-selected="true" aria-controls="pc-step-1" id="pc-tab-1">
+                <span class="pc-step-num">1</span><span class="pc-step-label">Quantità</span>
+              </button>
+              <button type="button" class="pc-step-tab" data-step="2" aria-selected="false" aria-controls="pc-step-2" id="pc-tab-2">
+                <span class="pc-step-num">2</span><span class="pc-step-label">Personalizzazione</span>
+              </button>
+              <button type="button" class="pc-step-tab" data-step="3" aria-selected="false" aria-controls="pc-step-3" id="pc-tab-3">
+                <span class="pc-step-num">3</span><span class="pc-step-label">File e note</span>
+              </button>
+              <button type="button" class="pc-step-tab" data-step="4" aria-selected="false" aria-controls="pc-step-4" id="pc-tab-4">
+                <span class="pc-step-num">4</span><span class="pc-step-label">Riepilogo</span>
+              </button>
+            </nav>
+          </header>
+          <div class="pc-modal-body">
+            <div id="pc-wizard-container" class="pc-wizard-container">
+              <div class="pc-wizard">
+                <div class="pc-content-area">
+                  <div class="pc-main-column">
+                    <section id="pc-step-1" class="pc-step-panel pc-active" role="tabpanel" data-step="1">
+                      <h3 class="pc-step-title">Taglie e colori <span class="pc-step-index">1/4</span></h3>
+                      <div class="pc-matrix-container pc-matrix-desktop">
+                        <div id="pc-quantity-tiers" class="pc-quantity-tiers" aria-live="polite">
+                          <h4>Sconti quantità</h4>
+                          <p class="pc-quantity-tiers-placeholder">—</p>
+                        </div>
+                        <div id="pc-size-color-matrix" class="pc-matrix">
+                          <div class="pc-matrix-loading" id="pc-matrix-loading">Caricamento...</div>
+                        </div>
+                      </div>
+                      <div id="pc-matrix-mobile-accordion" class="pc-matrix-mobile-accordion"></div>
+                      <p id="pc-qty-pricing-hint" class="pc-qty-pricing-hint pc-hidden" role="note"></p>
+                    </section>
+
+                    <section id="pc-step-2" class="pc-step-panel" role="tabpanel" data-step="2" hidden>
+                      <h3 class="pc-step-title" id="pc-step-2-title">Personalizzazione <span class="pc-step-index">2/4</span></h3>
+                      <div id="pc-personalization-meta" class="pc-personalization-meta pc-pers-meta-panel"></div>
+                      <div id="pc-awards-labels" class="pc-awards-labels" hidden></div>
+                    </section>
+
+                    <section id="pc-step-3" class="pc-step-panel" role="tabpanel" data-step="3" hidden>
+                      <h3 class="pc-step-title" id="pc-step-3-title">File e note <span class="pc-step-index">3/4</span></h3>
+                      <div class="pc-file-step">
+                        <label class="pc-toggle-label pc-mb" id="pc-send-later-wrap">
+                          <input type="checkbox" id="pc-send-later" name="properties[Non ho un file]">
+                          <span>Non ho un file.</span>
+                        </label>
+                        <div id="pc-upload-zone" class="pc-upload-zone">
+                          <input type="file" id="pc-file-input" class="pc-file-input" multiple accept="image/*,.pdf,.ai,.eps" aria-label="Carica file grafici">
+                          <div class="pc-upload-placeholder" id="pc-upload-placeholder">
+                            <span class="pc-upload-icon">📎</span>
+                            <span id="pc-upload-placeholder-text">Trascina i file qui o clicca per selezionare</span>
+                          </div>
+                          <ul class="pc-file-list" id="pc-file-list" aria-live="polite"></ul>
+                        </div>
+                        <div class="pc-field pc-mt" id="pc-graphic-instructions">
+                          <label for="pc-print-notes">👇 Scrivi qui le istruzioni per i nostri operatori</label>
+                          <textarea id="pc-print-notes" name="properties[Note stampa]" rows="5" maxlength="5000" placeholder="Scrivi qui le istruzioni..."></textarea>
+                        </div>
+                        <div id="pc-delivery-notes" class="pc-delivery-notes" hidden></div>
+                      </div>
+                    </section>
+
+                    <section id="pc-step-4" class="pc-step-panel" role="tabpanel" data-step="4" hidden>
+                      <h3 class="pc-step-title">Riepilogo <span class="pc-step-index">4/4</span></h3>
+                      <div id="pc-final-summary" class="pc-final-summary"></div>
+                    </section>
+                  </div>
+
+                  <aside class="pc-summary-column" aria-label="Riepilogo configurazione">
+                    <div class="pc-mobile-summary-bar" id="pc-mobile-summary-bar">
+                      <div class="pc-mobile-summary-compact">
+                        <div class="pc-mobile-summary-row">
+                          <span class="pc-mobile-summary-qty">Quantità: <strong id="pc-mobile-qty">0</strong></span>
+                          <span class="pc-mobile-summary-total">Totale <strong id="pc-mobile-grand" class="pc-price">0,00 €</strong></span>
+                        </div>
+                        <button type="button" class="pc-mobile-summary-toggle pc-mobile-summary-link" id="pc-mobile-summary-toggle" aria-expanded="false">Visualizza riepilogo</button>
+                      </div>
+                    </div>
+                    <div class="pc-summary-sticky">
+                      <div class="pc-mobile-summary-detail" id="pc-mobile-summary-detail">
+                        <div id="pc-summary-product" class="pc-summary-product">
+                          <img id="pc-summary-image" class="pc-summary-image" src="" alt="" width="72" height="72">
+                          <div class="pc-summary-product-info">
+                            <span id="pc-summary-product-title" class="pc-summary-product-title"></span>
+                          </div>
+                        </div>
+                        <h4 class="pc-summary-title">Riepilogo</h4>
+                        <div id="pc-summary-merch-block" class="pc-summary-merch-block pc-hidden" hidden></div>
+                        <div id="pc-summary-items" class="pc-summary-items">
+                          <p class="pc-summary-empty" id="pc-summary-empty">Seleziona quantità nello step 1</p>
+                        </div>
+                        <div id="pc-summary-personalization" class="pc-summary-personalization" hidden></div>
+                        <div id="pc-qty-pricing-detail" class="pc-qty-pricing-detail pc-hidden"></div>
+                        <div class="pc-summary-totals">
+                          <div class="pc-summary-row"><span>Subtotale merce</span><span id="pc-total-base" class="pc-price">0,00 €</span></div>
+                          <div class="pc-summary-row"><span>Personalizzazioni</span><span id="pc-total-print" class="pc-price">0,00 €</span></div>
+                          <div class="pc-summary-row pc-summary-grand"><span>Totale</span><span id="pc-total-grand" class="pc-price">0,00 €</span></div>
+                        </div>
+                        <p class="pc-total-qty"><strong>Quantità totale:</strong> <span id="pc-total-qty-value">0</span></p>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="pc-modal-footer">
+            <div class="pc-nav-buttons">
+              <button type="button" class="pc-btn pc-btn-secondary pc-btn-prev" id="pc-btn-prev" disabled>Indietro</button>
+              <button type="button" class="pc-btn pc-btn-primary pc-btn-next" id="pc-btn-next">Avanti</button>
+              <button type="button" class="pc-btn pc-btn-primary pc-btn-add-cart" id="pc-btn-add-cart" hidden>Aggiungi al carrello</button>
+            </div>
+            <div id="pc-messages" class="pc-messages" role="alert" aria-live="polite"></div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="product-configurator.js?v=awards3"></script>
+</body>
+</html>
